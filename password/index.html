@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+   <div class="contenedor">
+       <div class="logo">
+           <img src="img/logo.jpg" alt="">
+       </div>
+
+       <form action="" class="app" id="app">
+           <div class="fila numero-caracteres">
+                <div class="col">
+                    <label for="numero-caracteres">Numero de caracteres:</label>
+                </div>
+                <div class="col botones">
+                    <div>
+                        <button class="btn" id="btn-menos-uno"><i class="fas fa-minus"></i></button>
+                    </div>
+                    <div>
+                        <input type="text" id="numero-caracteres" readonly value="12">
+                    </div>
+                    <div>
+                        <button class="btn" id="btn-mas-uno"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+           </div>
+
+           <div class="fila simbolos">
+               <div class="col">
+                    <label for="simbolos">¿Incluir simbolos?</label>
+               </div>
+               <div class="col">
+                   <button class="btn" id="btn-simbolos"><i class="fas fa-check"></i></button>
+               </div>
+               
+           </div>
+
+           <div class="fila numeros">
+            <div class="col">
+                 <label for="numeros">¿Incluir numeros?</label>
+            </div>
+            <div class="col">
+                <button class="btn" id="btn-numeros"><i class="fas fa-check"></i></button>
+            </div>
+
+            </div>
+
+            <div class="fila mayusculas">
+                <div class="col">
+                     <label for="mayusculas">¿Incluir mayusculas?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-mayusculas"><i class="fas fa-check"></i></button>
+                </div>
+                
+            </div>
+
+            <div class="fila generar">
+                <div class="col">
+                    <button class="btn btn-generar" id="btn-generar">Generar <i class="fas fa-lock"></i></button>
+                </div>
+                <div class="col">
+                    <input type="text" class="input-password" id="input-password" readonly value="tX4su(!b">
+                </div>
+            </div>
+
+            <div class="fila alerta">
+                <div class="col">
+                    <div class="alerta-copiado" id="alerta-copiado">
+                        <p><i class="fas fa-copy"></i> Texto copiado</p>
+                    </div>
+                </div>
+            </div>
+            
+        
+       </form>
+   </div>
+    
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
